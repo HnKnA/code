@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;4_Way_Traffic_Light&apos;" deleteContents="false" description="Delete resource &apos;4_Way_Traffic_Light&apos;" element1="/4_Way_Traffic_Light" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1664777401737"/>
+</session>

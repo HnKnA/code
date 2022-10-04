@@ -1,0 +1,22 @@
+13:11:09 **** Build of configuration Debug for project 4_Way_Traffic_Light ****
+make -j8 all 
+arm-none-eabi-gcc -o "4_Way_Traffic_Light.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\GIT Projects\MCU TEST\Lab1\Ex3\STM\4_Way_Traffic_Light\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4_Way_Traffic_Light.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4_Way_Traffic_Light.elf
+ 
+arm-none-eabi-size   4_Way_Traffic_Light.elf 
+arm-none-eabi-objdump -h -S  4_Way_Traffic_Light.elf  > "4_Way_Traffic_Light.list"
+arm-none-eabi-objcopy  -O ihex  4_Way_Traffic_Light.elf  "4_Way_Traffic_Light.hex"
+arm-none-eabi-objcopy  -O binary  4_Way_Traffic_Light.elf  "4_Way_Traffic_Light.bin"
+   text	   data	    bss	    dec	    hex	filename
+   4856	     20	   1572	   6448	   1930	4_Way_Traffic_Light.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4_Way_Traffic_Light.bin
+Finished building: 4_Way_Traffic_Light.hex
+ 
+ 
+Finished building: 4_Way_Traffic_Light.list
+ 
+
+13:11:10 Build Finished. 0 errors, 0 warnings. (took 971ms)
+
